@@ -27,6 +27,12 @@ h3 {
     color: #eae8e8;
 }
 
+h3 {
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+    text-align: left:
+}
+
 .container {
     width: 100%;
     max-width: 960px;
