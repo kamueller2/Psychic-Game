@@ -45,13 +45,23 @@ let newGame = function() {
     soFar();
 }
 
+
+
 document.onkeyup = function(event) {
     let playerGuess = event.key;
-    left--;
-    lettersGuessed.push(playerGuess);
-    soFar();
-    remainingGuess();
+    //console.log(event.keyCode)
 
+
+    for (let i = 0; i < choices.length; i++) {
+        if (choices[i] === playerGuess) {
+            left--;
+
+            lettersGuessed.push(playerGuess.toLowerCase());
+            soFar();
+            remainingGuess();
+        }
+
+    }
     if (left >= 0) {
         if (playerGuess === psychic) {
             wins++;
@@ -61,9 +71,10 @@ document.onkeyup = function(event) {
     } else if (left < 0) {
         losses++;
         document.getElementById("losses").innerHTML = losses;
-        //alert("Game over, rematch?");
+        alert("Game over, rematch?");
         newGame();
 
     }
+
 
 }
