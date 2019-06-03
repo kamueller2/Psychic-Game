@@ -5,7 +5,7 @@ let choices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
 let wins = 0; // user wins
 let losses = 0; // user loses
 let left = 9; // guesses left
-let guesses = 9;
+//let guesses = 9;
 let lettersGuessed = [];
 let psychic = "";
 
