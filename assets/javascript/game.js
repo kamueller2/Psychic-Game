@@ -67,11 +67,11 @@ document.onkeyup = function(event) {
         document.getElementById("wins").innerHTML = wins;
         magic();
     }
-    if (left === 0) {
+    if (left === -1) {
         losses++;
         document.getElementById("losses").innerHTML = losses;
-        //alert("Game over, rematch?");
-        //newGame();
+        alert("Game over, rematch?");
+        newGame();
 
     }
 
