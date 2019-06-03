@@ -22,8 +22,7 @@ h1 {
 }
 
 h1,
-h2,
-h4 {
+h2 {
     margin-top: 8px;
     color: #eae8e8;
 }
@@ -36,9 +35,10 @@ h3 {
 }
 
 h4 {
+    margin-top: 8px;
     letter-spacing: 0.25em;
     text-align: left;
-    color: #eae8e8;
+    color: darkred;
 }
 
 .container {
