@@ -62,17 +62,16 @@ document.onkeyup = function(event) {
         }
 
     }
-    if (left >= 0) {
-        if (playerGuess === psychic) {
-            wins++;
-            document.getElementById("wins").innerHTML = wins;
-            magic();
-        }
-    } else if (left < 0) {
+    if (playerGuess === psychic) {
+        wins++;
+        document.getElementById("wins").innerHTML = wins;
+        magic();
+    }
+    if (left === 0) {
         losses++;
         document.getElementById("losses").innerHTML = losses;
-        alert("Game over, rematch?");
-        newGame();
+        //alert("Game over, rematch?");
+        //newGame();
 
     }
 
